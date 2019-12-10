@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t chaimailankody/multi-client ./client
-  - docker build -t chaimailankody/multi-nginx ./multi-nginx
+  - docker build -t chaimailankody/multi-nginx ./nginx
   - docker build -t chaimailankody/multi-server ./server
   - docker build -t chaimailankody/multi-worker ./worker
   #Log in to the docker CLI
