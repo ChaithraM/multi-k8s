@@ -17,5 +17,6 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take those images and push them to docker hub
   - docker push chaimailankody/multi-client
+  - docker push chaimailankody/multi-nginx
   - docker push chaimailankody/multi-server
   - docker push chaimailankody/multi-worker
